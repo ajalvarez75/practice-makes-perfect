@@ -1,7 +1,7 @@
-1 mutabilidad e inmutabilidad en python:
+1 '''mutabilidad e inmutabilidad en python:
 esta relacionado con las estructuras de datos del lenguaje.
 listas, sets y diccionarios son mutables.
-tuplas son inmutables.
+tuplas son inmutables.'''
 
 2 comprehensions, son una manera de crear listas en una sola linea, 
 dicho de otra forma de forma simplificada pero elegante.
@@ -24,15 +24,15 @@ dicho de otra forma de forma simplificada pero elegante.
 
 11 formas de hacer una lista.
 
-12 variable Global
+12 #variable Global
 
-13 cuidado! nunca colocar cosas mutables como argunmento por defecto.
+13 #cuidado! nunca colocar cosas mutables como argunmento por defecto.
 
-14 version control system, ejemplo GIT y GITHUB
+14 #version control system, ejemplo GIT y GITHUB
 
 15 diferencia entre merge and rebase, saber de rebase es opcional.
 
-16 diferencia entre el operador = y el operador is
+16 #diferencia entre el operador = y el operador is
 
 17 diferencia entre *args y **kwargs en Python.
 
