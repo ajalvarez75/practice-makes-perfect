@@ -1,3 +1,4 @@
-tupla = tuple((value for value in range (0, 101) if value % 2 != 0))
+#comprehension
+my_tuple = tuple((value for value in range (0, 101) if value % 2 != 0))
 
-print(tupla)
+print(my_tuple)

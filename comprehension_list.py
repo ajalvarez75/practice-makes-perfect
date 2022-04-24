@@ -1,10 +1,14 @@
-lista = []
+#regular
 
-for valor in range(0, 101):
-	lista.append(valor)
+my_list = []
 
-print(lista)
+for value in range(0, 101):
+	my_list.append(value)
 
-lista=[valor for valor in range(0, 101) if valor % 2 == 0]
+print(my_list)
 
-print(lista)
+
+#comprehension
+my_list = [value for value in range(0, 101) if value % 2 == 0]
+
+print(my_list)
