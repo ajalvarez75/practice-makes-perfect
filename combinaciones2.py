@@ -1,0 +1,1 @@
+hacer todas las combinaciones de 3 digitos comenzando con 01

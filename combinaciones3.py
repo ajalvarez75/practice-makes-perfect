@@ -1,0 +1,1 @@
+hacer todas las combinaciones de 2 numeros de 2 digitos. 
