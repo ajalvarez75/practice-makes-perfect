@@ -2,15 +2,11 @@
 import itertools
 
 def combinaciones(numeros):
-	lista=[]
-
-	for i in range(numeros):
-		lista.append(i)
-
+	lista=list(range(numeros))
 	result=itertools.combinations(lista,2)
 
 	for a in result:
 		#print("".join(map(str,a)), end=",")
-		print(*a, sep="", end=", ")
+		print(*a, sep="",)
 
 combinaciones(10)

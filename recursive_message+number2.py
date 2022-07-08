@@ -6,4 +6,4 @@ def mensaje(min,max,mensajes):
 		print(mensajes)
 		return mensaje(min+1,max,mensajes)
 
-mensaje(1,2,"alvaro")
+mensaje(2,4,"alvaro")
