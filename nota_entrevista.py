@@ -31,7 +31,7 @@ one thread executes Python bytecode at a time.'''
 
 - La concurrencia es la capacidad del CPU para procesar más de un proceso al mismo tiempo.
 En la concurrencia, los procesos en ejecución no tienen por qué estar relacionados, es decir, 
-cualquiera puede iniciar y terminar en el momento que sea, y el resultado de uno no afecta al otro.
+cualquiera puede iniciar y terminar en el momento que sea.
 
 El paralelismo sigue la filosofía de “divide y vencerás”, ya que consiste en tomar un único problema, 
 y mediante concurrencia llegar a una solución más rápido. El paralelismo lo que hace es tomar el problema 
@@ -117,6 +117,20 @@ iterator by returning all the values in the loop without
 affecting the iteration of the loop.
 ● Every Generator is an iterator
 
+
+def generadora():
+    n=1
+    yield n
+
+    n+=1
+    yield n
+
+    n+=1
+    yield n
+
+for i in generadora:
+    print(n)
+
 '''
 
 9 '''first class function o funciones de primera clase.
@@ -144,6 +158,7 @@ def decoradorA(parameter):
         print("paso final")
     return decoradorB
 
+@decoradorA
 def add(n1,n2):
     print(n1+n2)
 add(5,10)
@@ -183,7 +198,7 @@ print(z)'''
 
 13 #nota: cuidado! nunca colocar cosas mutables como argunmento por defecto.
 
-14 #version control system, ejemplo GIT y GITHUB
+14 #version control system, ejemplo GIT y #GITHUB
 
 15 '''diferencia entre merge and rebase, saber de rebase es opcional.
 git merge al ser aplicado, mantiene a salvo la historia de la rama secundaria, ya que crea un nuevo commit 
@@ -219,7 +234,29 @@ se produce el desarrollo de un producto que es entregable potencialmente.
 es la fase en la que se mide el progreso de un determinado proyecto Scrum.'''
 
 19 '''context manager
-'''
+Los context managers son objetos de Python que proveen información contextual adicional al bloque de código. 
+Esta información consiste en correr una función (o cualquier callable) cuando se inicia el contexto con el 
+keyword with; al igual que correr otra función cuando el código dentro del bloque with concluye. Por ejemplo:
+
+Existen dos formas de implementar un context manager: 
+con una clase o con un generador. Vamos a implementar la funcionalidad anterior para ilustrar el punto:
+
+class file:
+    #
+    def __init__(self,filename, method):
+        self.file=open(filename, method)
+
+    def __enter__(self):
+        print("enter")
+        return self.file
+
+    def __exit__(self, type,value,traceback):
+        print("exit")
+        self.file.close()
+
+with file('file.txt', 'w') as f:
+    print("something")
+    f.write("hello")'''
 
 20 #cuenta platzi: christopher.guzmanreyes@gmail.com contraseña: HagaleMijo2022.
 
