@@ -94,4 +94,4 @@ def arithmetic_arranger(lista,true=False):
         su1.rjust(po_ini1),su2.rjust(po_ini2),su3.rjust(po_ini3),su4.rjust(po_ini4),su5.rjust(po_ini5))
 
     return struture1
-print(arithmetic_arranger(["10 + 1000","40 - 2000","4 + 43","1 + 49","1 + 1"]))
+print(arithmetic_arranger(["1 + 1","40 - 2000","4 + 43","1 + 49","1 + 1"],True))
