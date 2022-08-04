@@ -1,5 +1,4 @@
-def add_time(start, duration, day=None):
-   
+def add_time(start, duration, day=None):  
     new_star,new_duration,meridiem=[],[],[]
     star_meridiem=start.split()
 
